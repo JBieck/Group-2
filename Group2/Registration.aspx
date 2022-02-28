@@ -16,6 +16,9 @@
         .auto-style3 {
             height: 89px;
         }
+        .auto-style4 {
+            margin-left: 40px;
+        }
     </style>
 </head>
 <body>
@@ -106,7 +109,7 @@
                 <tr>
                     <td class="auto-style2"></td>
                     <td class="auto-style3">
-                        <asp:Button ID="btnJoin" runat="server" Text="Join" />
+                        <asp:Button ID="btnJoin" runat="server" Text="Join" CssClass="auto-style4" />
                     </td>
                     <td class="auto-style3"></td>
                 </tr>
