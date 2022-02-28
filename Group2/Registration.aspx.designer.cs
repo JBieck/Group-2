@@ -33,22 +33,22 @@ namespace Group2
         protected global::System.Web.UI.WebControls.Label lblCollectR;
 
         /// <summary>
-        /// Label1 control.
+        /// lblSignUp control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label lblSignUp;
 
         /// <summary>
-        /// Label2 control.
+        /// lblEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Label lblEmail;
 
         /// <summary>
         /// txtEmail control.
@@ -105,13 +105,13 @@ namespace Group2
         protected global::System.Web.UI.WebControls.Button btnJoin;
 
         /// <summary>
-        /// Label3 control.
+        /// lblRegisteredAcc control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label3;
+        protected global::System.Web.UI.WebControls.Label lblRegisteredAcc;
 
         /// <summary>
         /// btnLogin control.

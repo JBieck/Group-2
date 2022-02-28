@@ -7,17 +7,35 @@
     <title></title>
     <style type="text/css">
         .auto-style1 {
-            width: 303px;
+            width: 318px;
         }
         .auto-style2 {
-            width: 303px;
+            width: 318px;
             height: 89px;
         }
         .auto-style3 {
             height: 89px;
         }
         .auto-style4 {
-            margin-left: 40px;
+            width: 318px;
+            height: 28px;
+        }
+        .auto-style5 {
+            height: 28px;
+        }
+        .auto-style6 {
+            width: 318px;
+            height: 29px;
+        }
+        .auto-style7 {
+            height: 29px;
+        }
+        .auto-style8 {
+            width: 318px;
+            height: 30px;
+        }
+        .auto-style9 {
+            height: 30px;
         }
     </style>
 </head>
@@ -33,7 +51,7 @@
                 <tr>
                     <td class="auto-style1">&nbsp;</td>
                     <td>
-                        <asp:Label ID="lblCollectR" runat="server" Font-Bold="True" Font-Size="Larger" ForeColor="#9900CC" Text="CollectR"></asp:Label>
+                        <asp:Label ID="lblCollectR" runat="server" Font-Bold="True" Font-Size="Larger" ForeColor="#9900CC" Text="CollectR" CssClass="auto-style8" Font-Names="Leelawadee UI"></asp:Label>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
@@ -43,11 +61,11 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style1">&nbsp;</td>
-                    <td>
-                        <asp:Label ID="Label1" runat="server" Font-Bold="True" Text="Sign Up Today!"></asp:Label>
+                    <td class="auto-style6"></td>
+                    <td class="auto-style7">
+                        <asp:Label ID="lblSignUp" runat="server" Font-Bold="True" Text="Sign Up Today!" Font-Names="Leelawadee UI Semilight"></asp:Label>
                     </td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style7"></td>
                 </tr>
                 <tr>
                     <td class="auto-style1">&nbsp;</td>
@@ -57,7 +75,7 @@
                 <tr>
                     <td class="auto-style1">&nbsp;</td>
                     <td>
-                        <asp:Label ID="Label2" runat="server" Text="Enter Email:"></asp:Label>
+                        <asp:Label ID="lblEmail" runat="server" Text="Enter Email:"></asp:Label>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
@@ -93,42 +111,43 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style1">&nbsp;</td>
-                    <td>
+                    <td class="auto-style8"></td>
+                    <td class="auto-style9">
                         <asp:Label ID="lblPassword" runat="server" Text="Enter Password:"></asp:Label>
                     </td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style9"></td>
                 </tr>
                 <tr>
                     <td class="auto-style1">&nbsp;</td>
                     <td>
-                        <asp:TextBox ID="txtPassword" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtPassword" runat="server" CausesValidation="True" EnableTheming="True"></asp:TextBox>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style2"></td>
                     <td class="auto-style3">
-                        <asp:Button ID="btnJoin" runat="server" Text="Join" CssClass="auto-style4" />
+                        <asp:Button ID="btnJoin" runat="server" Text="Join" />
                     </td>
                     <td class="auto-style3"></td>
                 </tr>
                 <tr>
                     <td class="auto-style1">&nbsp;</td>
                     <td>
-                        <asp:Label ID="Label3" runat="server" Font-Bold="True" Text="Already Have an Account?"></asp:Label>
+                        <asp:Label ID="lblRegisteredAcc" runat="server" Font-Bold="True" Text="Already Have an Account?" Font-Names="Leelawadee UI"></asp:Label>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style1">&nbsp;</td>
-                    <td aria-orientation="horizontal">
-                        <asp:Button ID="btnLogin" runat="server" Text="Login" />
+                    <td class="auto-style4"></td>
+                    <td aria-orientation="horizontal" class="auto-style5">
+                        <asp:Button ID="btnLogin" runat="server" Text="Login" BackColor="#CC00FF" CssClass="auto-style8" Font-Bold="True" Font-Names="Malgun Gothic" Width="100px" />
                     </td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style5"></td>
                 </tr>
             </table>
         </div>
     </form>
 </body>
 </html>
+
