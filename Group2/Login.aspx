@@ -26,10 +26,10 @@
         }
         .auto-style2 {
             width: 318px;
-            height: 89px;
+            height: 74px;
         }
         .auto-style3 {
-            height: 89px;
+            height: 74px;
         }
         .auto-style4 {
             width: 318px;
@@ -44,9 +44,6 @@
         }
         .auto-style11 {
             height: 23px;
-        }
-        .auto-style12 {
-            margin-left: 49px;
         }
         .auto-style20 {
             margin-left: 55px;
@@ -146,8 +143,8 @@
                 </tr>
                 <tr>
                     <td class="auto-style2"></td>
-                    <td class="auto-style1">
-                        &nbsp;</td>
+                    <td class="auto-style2">
+                        </td>
                     <td class="auto-style3"></td>
                 </tr>
                 <tr>
