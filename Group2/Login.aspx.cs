@@ -31,7 +31,7 @@ namespace Group2
 
             else
             {
-                Response.Redirect("Profile.aspx");
+                Response.Redirect("Home.aspx");
             }
         }
 

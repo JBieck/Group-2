@@ -52,7 +52,7 @@ namespace Group2
                 return;
             }
 
-            Response.Redirect("Profile.aspx");
+            Response.Redirect("Home.aspx");
         }
     }
 }
