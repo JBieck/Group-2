@@ -13,5 +13,31 @@ namespace Group2
         {
 
         }
+
+        protected void btnLogin_Click(object sender, EventArgs e)
+        {
+            lblLoginNameError.Text = String.Empty;
+            lblLoginPassError.Text = String.Empty;
+
+            if (txtUserName.Text == String.Empty)
+            {
+                lblLoginNameError.Text = "Please enter your user name!";
+            }
+
+            else if (txtPassword.Text == String.Empty)
+            {
+                lblLoginPassError.Text = "Please enter your password!";
+            }
+
+            else
+            {
+                Response.Redirect("Profile.aspx");
+            }
+        }
+
+        protected void btnSignUp_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Registration.aspx");
+        }
     }
 }

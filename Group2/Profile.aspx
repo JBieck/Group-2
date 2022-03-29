@@ -35,15 +35,15 @@
             height: 94px;
         }
         .auto-style28 {
-            width: 277px;
+            width: 343px;
             height: 184px;
         }
         .auto-style29 {
-            width: 277px;
+            width: 343px;
             height: 104px;
         }
         .auto-style30 {
-            width: 277px;
+            width: 343px;
             height: 94px;
         }
     </style>
@@ -54,7 +54,7 @@
             <table class="auto-style1">
                 <tr>
                     <td class="auto-style25">
-                        <asp:Image ID="imgProfileImage" runat="server" BorderStyle="Solid" ImageAlign="Middle" ImageUrl="~/Images/el_arbol_de_la_vida-1600x1200.jpg" Width="254px" />
+                        <asp:Image ID="imgProfileImage" runat="server" BorderStyle="Solid" ImageAlign="Middle" ImageUrl="~/Images/SelenePetIMG.jpg" Width="253px" Height="287px" />
                         <br />
                         <br />
                         <asp:Button ID="btnChangeImage" runat="server" Text="Change Image" />
@@ -64,11 +64,11 @@
                 </tr>
                 <tr>
                     <td class="auto-style26">First Name:
-                        <asp:Label ID="lblFirstName" runat="server"></asp:Label>
+                        <asp:Label ID="lblFirstName" runat="server">Henry</asp:Label>
                         <br />
                         <br />
                         Last Name:
-                        <asp:Label ID="lblLastName" runat="server"></asp:Label>
+                        <asp:Label ID="lblLastName" runat="server">Smith</asp:Label>
                     </td>
                     <td class="auto-style29">
                         <asp:Button ID="btnCollections" runat="server" Text="Collections" Width="176px" />
@@ -79,16 +79,17 @@
                         <br />
                         <asp:Button ID="Button3" runat="server" Text="Wishlist" Width="176px" />
                         <br />
+                        <br />
                     </td>
                     <td class="auto-style24"></td>
                 </tr>
                 <tr>
                     <td class="auto-style27">Username:
-                        <asp:Label ID="lblUsername" runat="server"></asp:Label>
+                        <asp:Label ID="lblUsername" runat="server">CollectRUser5309</asp:Label>
                         <br />
                         <br />
                         eMail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <asp:Label ID="lbleMail" runat="server"></asp:Label>
+                        <asp:Label ID="lbleMail" runat="server">Henry.SmithEMail@mail.com</asp:Label>
                     </td>
                     <td class="auto-style30">
                         <asp:Button ID="btnEditProfile" runat="server" Text="Edit Profile" Width="176px" />
@@ -97,7 +98,7 @@
                         <asp:Button ID="lvlPrivacy" runat="server" Text="Privacy Settings" Width="176px" />
                         <br />
                         <br />
-                        <asp:Button ID="lblLogout" runat="server" Text="Logout" Width="176px" />
+                        <asp:Button ID="lblLogout" runat="server" Text="Logout" Width="176px" OnClick="lblLogout_Click" />
                     </td>
                     <td class="auto-style18"></td>
                 </tr>
