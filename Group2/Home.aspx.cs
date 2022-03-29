@@ -11,7 +11,10 @@ namespace Group2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            //if(!Authenticated)
+            //{
+            //    Response.Redirect("Login.aspx");
+            //}
         }
 
         protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
