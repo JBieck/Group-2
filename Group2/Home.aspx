@@ -48,9 +48,13 @@
                     <td class="auto-style2">&nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style5"></td>
+                    <td class="auto-style5">
+                        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Collections" />
+                    </td>
                     <td class="auto-style4">&nbsp;</td>
-                    <td class="auto-style2"></td>
+                    <td class="auto-style2">
+                        <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Logout" />
+                    </td>
                 </tr>
             </table>
         </div>

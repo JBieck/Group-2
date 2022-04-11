@@ -102,6 +102,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\Database1.mdf" />
+    <Content Include="Collection.aspx" />
     <Content Include="default.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="Images\SelenePetIMG.jpg" />
@@ -114,6 +115,13 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Collection.aspx.cs">
+      <DependentUpon>Collection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Collection.aspx.designer.cs">
+      <DependentUpon>Collection.aspx</DependentUpon>
+    </Compile>
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
