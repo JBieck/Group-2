@@ -36,16 +36,27 @@
                 </tr>
                 <tr>
                     <td class="auto-style5"></td>
-                    <td class="auto-style4"></td>
+                    <td class="auto-style4">
+                        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1">
+                            <Columns>
+                                <asp:BoundField DataField="UserName" HeaderText="UserName" SortExpression="UserName" />
+                                <asp:BoundField DataField="Date" HeaderText="Date" SortExpression="Date" />
+                                <asp:BoundField DataField="Content" HeaderText="Post" SortExpression="Content" />
+                            </Columns>
+                        </asp:GridView>
+                    </td>
                     <td class="auto-style2">&nbsp;</td>
                 </tr>
                 <tr>
                     <td class="auto-style5"></td>
-                    <td class="auto-style4"></td>
+                    <td class="auto-style4">&nbsp;</td>
                     <td class="auto-style2"></td>
                 </tr>
             </table>
         </div>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" OnSelecting="SqlDataSource1_Selecting" SelectCommand="SELECT  [UserName], [Date], [Content]
+FROM [Posts], [Users]
+WHERE Users.UserID = Posts.UserID;"></asp:SqlDataSource>
     </form>
 </body>
 </html>

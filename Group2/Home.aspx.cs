@@ -21,5 +21,9 @@ namespace Group2
         {
             Response.Redirect("Profile.aspx");
         }
+        protected void SqlDataSource1_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
+        {
+
+        }
     }
 }
