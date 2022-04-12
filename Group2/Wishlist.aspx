@@ -67,7 +67,7 @@
                             <br />
                             <asp:Button ID="btnAddtoWL" runat="server" BackColor="#CCCCFF" Font-Bold="True" ForeColor="#9900CC" Text="Add" Width="66px" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <asp:Button ID="btnEditWL" runat="server" BackColor="#CCCCFF" Font-Bold="True" ForeColor="#9900CC" Text="Edit" Width="69px" />
+                            <asp:Button ID="btnEditWL" runat="server" BackColor="#CCCCFF" Font-Bold="True" ForeColor="#9900CC" Text="Edit" Width="69px" OnClick="btnEditWL_Click" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <asp:Button ID="Button3" runat="server" BackColor="#CCCCFF" Font-Bold="True" ForeColor="#9900CC" Text="Remove" Width="86px" />
                         </div>

@@ -78,7 +78,7 @@
                         <asp:Button ID="lvlPrivacy" runat="server" Text="Privacy Settings" Width="176px" />
                         <br />
                         <br />
-                        <asp:Button ID="Button3" runat="server" Text="Wishlist" Width="176px" />
+                        <asp:Button ID="Button3" runat="server" Text="Wishlist" Width="176px" OnClick="Button3_Click" />
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <asp:Button ID="lblLogout" runat="server" Text="Logout" Width="176px" OnClick="lblLogout_Click" />
                     </td>

@@ -24,7 +24,12 @@ namespace ProfilePage
 
         protected void btnCollections_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Collection");
+            Response.Redirect("Collection.aspx");
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Wishlist.aspx");
         }
     }
 }

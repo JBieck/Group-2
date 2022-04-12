@@ -18,5 +18,10 @@ namespace Group2
         {
             Response.Redirect("Profile.aspx");
         }
+
+        protected void btnEditWL_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
