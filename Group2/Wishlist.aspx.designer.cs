@@ -42,6 +42,15 @@ namespace Group2
         protected global::System.Web.UI.WebControls.Button btnReturnProfile;
 
         /// <summary>
+        /// sqlDSWishList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource sqlDSWishList;
+
+        /// <summary>
         /// lblWishList control.
         /// </summary>
         /// <remarks>
@@ -60,13 +69,40 @@ namespace Group2
         protected global::System.Web.UI.WebControls.GridView GridView1;
 
         /// <summary>
-        /// SqlDataSource1 control.
+        /// txtItemNameWL control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+        protected global::System.Web.UI.WebControls.TextBox txtItemNameWL;
+
+        /// <summary>
+        /// txtManufacturererWL control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtManufacturererWL;
+
+        /// <summary>
+        /// txtCountryOriginWL control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtCountryOriginWL;
+
+        /// <summary>
+        /// txtImageURLWL control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtImageURLWL;
 
         /// <summary>
         /// btnAddtoWL control.
@@ -78,21 +114,12 @@ namespace Group2
         protected global::System.Web.UI.WebControls.Button btnAddtoWL;
 
         /// <summary>
-        /// btnEditWL control.
+        /// btnRemoveFromWL control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnEditWL;
-
-        /// <summary>
-        /// Button3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button3;
+        protected global::System.Web.UI.WebControls.Button btnRemoveFromWL;
     }
 }
