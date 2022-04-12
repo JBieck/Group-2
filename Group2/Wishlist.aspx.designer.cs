@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ProfilePage
+namespace Group2
 {
 
 
-    public partial class Default
+    public partial class Wishlist
     {
 
         /// <summary>
@@ -33,49 +33,58 @@ namespace ProfilePage
         protected global::System.Web.UI.WebControls.Label lblCollectR;
 
         /// <summary>
-        /// imgProfileImage control.
+        /// btnReturnProfile control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgProfileImage;
+        protected global::System.Web.UI.WebControls.Button btnReturnProfile;
 
         /// <summary>
-        /// btnCollections control.
+        /// lblWishList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCollections;
+        protected global::System.Web.UI.WebControls.Label lblWishList;
 
         /// <summary>
-        /// btnEditProfile control.
+        /// GridView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnEditProfile;
+        protected global::System.Web.UI.WebControls.GridView GridView1;
 
         /// <summary>
-        /// Button2 control.
+        /// SqlDataSource1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
 
         /// <summary>
-        /// lvlPrivacy control.
+        /// btnAddtoWL control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button lvlPrivacy;
+        protected global::System.Web.UI.WebControls.Button btnAddtoWL;
+
+        /// <summary>
+        /// btnEditWL control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnEditWL;
 
         /// <summary>
         /// Button3 control.
@@ -85,14 +94,5 @@ namespace ProfilePage
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button3;
-
-        /// <summary>
-        /// lblLogout control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button lblLogout;
     }
 }

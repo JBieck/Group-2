@@ -21,5 +21,10 @@ namespace ProfilePage
         {
             Response.Redirect("Login.aspx");
         }
+
+        protected void btnCollections_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Collection");
+        }
     }
 }
