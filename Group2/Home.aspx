@@ -37,7 +37,7 @@
                 <tr>
                     <td class="auto-style5"></td>
                     <td class="auto-style4">
-                        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1">
+                        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" AllowSorting="True">
                             <Columns>
                                 <asp:BoundField DataField="UserName" HeaderText="UserName" SortExpression="UserName" />
                                 <asp:BoundField DataField="Date" HeaderText="Date" SortExpression="Date" />
