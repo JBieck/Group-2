@@ -5,6 +5,11 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+//SQL
+using System.Data;
+using System.Data.SqlClient;
+using System.Configuration;
+
 namespace Group2
 {
     public partial class Registration : System.Web.UI.Page
@@ -52,7 +57,42 @@ namespace Group2
                 return;
             }
 
-            Response.Redirect("Home.aspx");
+            //add to database
+            if(CreateUser())
+            {
+                Response.Redirect("Home.aspx");
+            }
+        }
+
+        private Boolean CreateUser()
+        {
+            var ret = false;
+
+            SqlConnection conn = null;
+            try
+            {
+                string connString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+                conn = new SqlConnection(connString);
+                var query = String.Format("INSERT INTO [Users] ([UserName], [Email], [Password]) VALUES ('{0}', '{1}', '{2}')", txtUserName.Text, txtEmail.Text, txtPassword.Text);
+
+                Session.Add("uname", txtUserName.Text);
+
+                SqlCommand cmd = new SqlCommand(query, conn);
+                conn.Open();
+                cmd.ExecuteNonQuery();
+                ret = true;
+            }
+            catch (Exception ex)
+            {
+                //handle error
+                Response.Write("Error: " + ex.ToString());
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return ret; 
         }
     }
 }
