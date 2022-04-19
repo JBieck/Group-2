@@ -38,7 +38,7 @@ namespace Group2
                 return;
             }
 
-            if(txtUserName.Text == String.Empty)
+            if(txtUserName.Text.Equals(String.Empty))
             {
                 lblUserNameError.Text = "Please enter a unique user name";
             }
@@ -58,6 +58,7 @@ namespace Group2
             }
 
             //add to database
+            //this currently allows duplicates
             if(CreateUser())
             {
                 Response.Redirect("Home.aspx");
@@ -73,13 +74,23 @@ namespace Group2
             {
                 string connString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
                 conn = new SqlConnection(connString);
-                var query = String.Format("INSERT INTO [Users] ([UserName], [Email], [Password]) VALUES ('{0}', '{1}', '{2}')", txtUserName.Text, txtEmail.Text, txtPassword.Text);
+                var sql = String.Format("INSERT INTO [Users] ([UserName], [Email], [Password]) VALUES ('{0}', '{1}', '{2}')", txtUserName.Text, txtEmail.Text, txtPassword.Text);
+                string sql2 = String.Format("SELECT[UserID] FROM[Users] WHERE([UserName] = '{0}')", txtUserName.Text);
 
                 Session.Add("uname", txtUserName.Text);
 
-                SqlCommand cmd = new SqlCommand(query, conn);
+                SqlCommand cmd = new SqlCommand(sql, conn);
                 conn.Open();
                 cmd.ExecuteNonQuery();
+
+                //save new ID
+                cmd = new SqlCommand(sql2, conn);
+                string value = Convert.ToString(cmd.ExecuteScalar());
+                cmd.Dispose();
+
+                //create session parameter
+                Session.Add("uid", value);
+
                 ret = true;
             }
             catch (Exception ex)

@@ -59,7 +59,6 @@
                         <asp:Label ID="lblCollectR" runat="server" Font-Bold="True" Font-Size="Larger" ForeColor="#9900CC" Text="CollectR" CssClass="auto-style20" Font-Names="Leelawadee UI"></asp:Label>
                         <br />
                         <br />
-                        <asp:Image ID="imgProfileImage" runat="server" BorderStyle="Solid" ImageAlign="Middle" ImageUrl="~/Images/SelenePetIMG.jpg" Width="200px" Height="228px" />
                         <br />
                         <br />
                     </td>
@@ -70,7 +69,7 @@
                     <td class="auto-style32">
                         <asp:Button ID="btnCollections" runat="server" Text="Collections" Width="176px" OnClick="btnCollections_Click" />
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <asp:Button ID="btnEditProfile" runat="server" Text="Edit Profile" Width="176px" />
+                        <asp:Button ID="btnHome" runat="server" Text="Home" Width="176px" OnClick="btnHome_Click" />
                         <br />
                         <br />
                         <asp:Button ID="Button2" runat="server" Text="Friends" Width="176px" />
@@ -83,6 +82,15 @@
                         <asp:Button ID="lblLogout" runat="server" Text="Logout" Width="176px" OnClick="lblLogout_Click" />
                     </td>
                     <td class="auto-style29">
+                        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="UserID" DataSourceID="SqlDataSource1">
+                            <Columns>
+                                <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
+                                <asp:BoundField DataField="UserName" HeaderText="User Name" SortExpression="UserName" />
+                                <asp:ImageField DataImageUrlField="ImageURL">
+                                    <ControlStyle Height="200px" />
+                                </asp:ImageField>
+                            </Columns>
+                        </asp:GridView>
                         <br />
                         <br />
                         <br />
@@ -93,17 +101,27 @@
                     <td class="auto-style26"></td>
                 </tr>
                 <tr>
-                    <td class="auto-style33">&nbsp;</td>
+                    <td class="auto-style33">
+                        <asp:TextBox ID="txtImageURLC" runat="server" Width="171px"></asp:TextBox>
+                        <asp:Button ID="btnUpdateImage" runat="server" OnClick="Button4_Click" Text="Update Image URL" />
+                    </td>
                     <td class="auto-style30">
                         <br />
                         <br />
                         <br />
                         <br />
                     </td>
-                    <td class="auto-style27"></td>
+                    <td class="auto-style27">
+                        <asp:Button ID="btnDelete" runat="server" OnClick="btnDelete_Click" Text="Delete Account" />
+                    </td>
                 </tr>
             </table>
         </div>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [UserID], [Email], [UserName], [ImageURL] FROM [Users] WHERE ([UserID] = @UserID)">
+            <SelectParameters>
+                <asp:SessionParameter Name="UserID" SessionField="uid" Type="Int32" />
+            </SelectParameters>
+        </asp:SqlDataSource>
     </form>
 </body>
 </html>

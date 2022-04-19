@@ -31,7 +31,7 @@
                     <td class="auto-style5"></td>
                     <td class="auto-style4"></td>
                     <td class="auto-style2">
-                        <asp:ImageButton ID="ImageButton1" runat="server" Height="287px" ImageUrl="~/Images/SelenePetIMG.jpg" OnClick="ImageButton1_Click" Width="253px" />
+                        <asp:ImageButton ID="imgProfile" runat="server" Height="287px" OnClick="ImageButton1_Click" Width="253px" />
                     </td>
                 </tr>
                 <tr>
@@ -51,7 +51,10 @@
                     <td class="auto-style5">
                         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Collections" />
                     </td>
-                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style4">
+                        <asp:TextBox ID="txtPost" runat="server" Width="431px"></asp:TextBox>
+                        <asp:Button ID="btnPost" runat="server" OnClick="btnPost_Click" Text="Post" Width="440px" />
+                    </td>
                     <td class="auto-style2">
                         <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Logout" />
                     </td>

@@ -114,7 +114,7 @@
                             <asp:Button ID="btnAddtoWL" runat="server" BackColor="#CCCCFF" Font-Bold="True" ForeColor="#9900CC" Text="Add" Width="66px" OnClick="btnAddtoWL_Click" />
                             <br />
                             <br />
-                            <asp:Button ID="btnRemoveFromWL" runat="server" OnClick="btnRemoveFromWL_Click1" Text="Button" />
+                            <asp:Button ID="btnRemoveFromWL" runat="server" OnClick="btnRemoveFromWL_Click1" Text="Remove Item" />
                             <br />
                             <span class="auto-style31">*Only enter item name to remove from list*</span></span></div>
                     </td>

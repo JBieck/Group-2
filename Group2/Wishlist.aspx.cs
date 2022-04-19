@@ -14,7 +14,10 @@ namespace Group2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if(Session["uid"] == null)
+            {
+                Response.Redirect("Login.aspx");
+            }
         }
 
         protected void btnReturnProfile_Click(object sender, EventArgs e)
@@ -34,6 +37,11 @@ namespace Group2
                 SqlCommand cmd = new SqlCommand(query, conn);
                 conn.Open();
                 cmd.ExecuteNonQuery();
+
+                txtItemNameWL.Text = "";
+                txtManufacturererWL.Text = "";
+                txtCountryOriginWL.Text = "";
+                txtImageURLWL.Text = "";
             }
             catch (Exception ex)
             {

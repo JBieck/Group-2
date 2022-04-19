@@ -26,20 +26,20 @@ namespace Group2
 
             if (txtUserName.Text == String.Empty)
             {
-                lblLoginNameError.Text = "Please enter your user name!";
+                lblLoginNameError.Text.Equals("Please enter your user name!");
             }
 
             else if (txtPassword.Text == String.Empty)
             {
-                lblLoginPassError.Text = "Please enter your password!";
+                lblLoginPassError.Text.Equals("Please enter your password!");
             }
 
             else
             {
-
+                //checks to see if the password matches the user in the database
                 if (!LoginCheck())
                 {
-                    lblLoginPassError.Text = "Invalid password!";
+                    lblLoginPassError.Text.Equals("Invalid password!");
                     return;
                 }
 
@@ -79,7 +79,7 @@ namespace Group2
                     cmd = new SqlCommand(sql2, conn);
                     value = Convert.ToString(cmd.ExecuteScalar());
                     cmd.Dispose();
-                    Response.Write(value.ToString());
+                    //Response.Write(value.ToString());
 
                     //create session parameter
                     Session.Add("uid", value);
