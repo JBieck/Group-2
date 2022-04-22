@@ -6,144 +6,68 @@
 <head runat="server">
     <title></title>
     <style type="text/css">
-        .auto-style1 {
-            width: 318px;
+        .auto-style6 {
+            text-align: center;
+            font-size: xx-large;
         }
-        .auto-style4 {
-            width: 318px;
-            height: 50px;
+        .auto-style7 {
+            text-align: center;
+            font-size: x-large;
         }
-        .auto-style5 {
-            height: 50px;
+        .auto-style8 {
+            font-size: medium;
+        }
+        .auto-style9 {
+            font-size: large;
         }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            <table style="width:100%;">
-                <tr>
-                    <td class="auto-style1">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style1">&nbsp;</td>
-                    <td>
-                        <asp:Label ID="lblCollectR" runat="server" Font-Bold="True" Font-Size="Larger" ForeColor="#9900CC" Text="CollectR" Font-Names="Leelawadee UI"></asp:Label>
-                    </td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style1">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style1">&nbsp;</td>
-                    <td>
-                        <asp:Label ID="Label1" runat="server" Font-Bold="True" Text="Sign Up Today!"></asp:Label>
-                    </td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style1">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style1">&nbsp;</td>
-                    <td>
-                        <asp:Label ID="Label2" runat="server" Text="Enter Email:"></asp:Label>
-                    </td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style1">&nbsp;</td>
-                    <td>
-                        <asp:TextBox ID="txtEmail" runat="server" TextMode="Email"></asp:TextBox>
-                        <asp:Label ID="lblEmailError" runat="server" ForeColor="Red"></asp:Label>
-                    </td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style1">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style1">&nbsp;</td>
-                    <td>
-                        <asp:Label ID="lblUsername" runat="server" Text="Enter Username:"></asp:Label>
-                    </td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style1">&nbsp;</td>
-                    <td>
-                        <asp:TextBox ID="txtUserName" runat="server"></asp:TextBox>
-                        <asp:Label ID="lblUserNameError" runat="server" ForeColor="Red"></asp:Label>
-                    </td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style1">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style1">&nbsp;</td>
-                    <td>
-                        <asp:Label ID="lblPassword" runat="server" Text="Enter Password:"></asp:Label>
-                    </td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style1">&nbsp;</td>
-                    <td>
-                        <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
-                        <asp:Label ID="lblPasswordError" runat="server" ForeColor="Red"></asp:Label>
-                    </td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style4"></td>
-                    <td class="auto-style5">
-                        <asp:Label ID="lblPasswordConfirm" runat="server" Text="Confirm Password:"></asp:Label>
-                    </td>
-                    <td class="auto-style5"></td>
-                </tr>
-                <tr>
-                    <td class="auto-style4"></td>
-                    <td class="auto-style5">
-                        <asp:TextBox ID="txtPasswordConfirm" runat="server" TextMode="Password"></asp:TextBox>
-                        <asp:Label ID="lblPasswordConfirmError" runat="server" ForeColor="Red"></asp:Label>
-                    </td>
-                    <td class="auto-style5"></td>
-                </tr>
-                <tr>
-                    <td class="auto-style4"></td>
-                    <td class="auto-style5">
-                        <asp:Button ID="btnJoin" runat="server" Text="Join" OnClick="btnJoin_Click" Width="100px" />
-                    </td>
-                    <td class="auto-style5"></td>
-                </tr>
-                <tr>
-                    <td class="auto-style1">&nbsp;</td>
-                    <td>
-                        <asp:Label ID="Label3" runat="server" Font-Bold="True" Text="Already Have an Account?"></asp:Label>
-                    </td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style1">&nbsp;</td>
-                    <td aria-orientation="horizontal">
-                        <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" />
-                    </td>
-                    <td>&nbsp;</td>
-                </tr>
-            </table>
-        </div>
+        <h1 class="auto-style6" style="font-family: 'Leelawadee UI'; color: #9900CC">CollectR</h1>
+        <p class="auto-style7" style="font-family: 'Malgun Gothic'; color: #000000; font-weight: bold;">
+            Sign Up Today!</p>
+        <p class="auto-style7" style="font-family: 'Malgun Gothic'; color: #000000; font-weight: bold;">
+            &nbsp;</p>
+        <p class="auto-style7" style="font-family: 'Malgun Gothic'; color: #000000; font-weight: bold;">
+                        <asp:Label ID="Label2" runat="server" Text="Enter Email:" CssClass="auto-style8" Font-Bold="False" Font-Names="Leelawadee UI"></asp:Label>
+                        <asp:Label ID="lblEmailError" runat="server" ForeColor="Red" CssClass="auto-style8"></asp:Label>
+                    </p>
+        <p class="auto-style7" style="font-family: 'Malgun Gothic'; color: #000000; font-weight: bold;">
+                        <asp:TextBox ID="txtEmail" runat="server" TextMode="Email" Width="250px"></asp:TextBox>
+                        </p>
+        <p class="auto-style7" style="font-family: 'Malgun Gothic'; color: #000000; font-weight: bold;">
+                        <asp:Label ID="lblUsername" runat="server" Text="Enter Username:" CssClass="auto-style8" Font-Bold="False"></asp:Label>
+                        <asp:Label ID="lblUserNameError" runat="server" ForeColor="Red" CssClass="auto-style8"></asp:Label>
+                    </p>
+        <p class="auto-style7" style="font-family: 'Malgun Gothic'; color: #000000; font-weight: bold;">
+                        <asp:TextBox ID="txtUserName" runat="server" OnTextChanged="txtUserName_TextChanged" Width="250px"></asp:TextBox>
+                        </p>
+        <p class="auto-style7" style="font-family: 'Malgun Gothic'; color: #000000; font-weight: bold;">
+                        <asp:Label ID="lblPassword" runat="server" Text="Enter Password:" CssClass="auto-style8" Font-Bold="False"></asp:Label>
+                        <asp:Label ID="lblPasswordError" runat="server" ForeColor="Red" CssClass="auto-style8"></asp:Label>
+                    </p>
+        <p class="auto-style7" style="font-family: 'Malgun Gothic'; color: #000000; font-weight: bold;">
+                        <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" Width="250px"></asp:TextBox>
+                        </p>
+        <p class="auto-style7" style="font-family: 'Malgun Gothic'; color: #000000; font-weight: bold;">
+                        <asp:Label ID="lblPasswordConfirm" runat="server" Text="Confirm Password:" CssClass="auto-style8" Font-Bold="False"></asp:Label>
+                        <asp:Label ID="lblPasswordConfirmError" runat="server" ForeColor="Red" CssClass="auto-style8"></asp:Label>
+                    </p>
+        <p class="auto-style7" style="font-family: 'Malgun Gothic'; color: #000000; font-weight: bold;">
+                        <asp:TextBox ID="txtPasswordConfirm" runat="server" TextMode="Password" Width="250px"></asp:TextBox>
+                        </p>
+        <p class="auto-style7" style="font-family: 'Malgun Gothic'; color: #000000; font-weight: bold;">
+                        <asp:Button ID="btnJoin" runat="server" Text="Join" OnClick="btnJoin_Click" Width="150px" BackColor="#9900CC" Font-Bold="True" Font-Names="Malgun Gothic" Font-Size="Medium" ForeColor="White" Height="35px" />
+                    </p>
+        <p class="auto-style8" style="font-family: 'Malgun Gothic'; color: #000000; font-weight: bold;">
+            &nbsp;</p>
+        <p class="auto-style7" style="font-family: 'Malgun Gothic'; color: #000000; font-weight: bold;">
+                        <asp:Label ID="Label3" runat="server" Font-Bold="True" Text="Already Have an Account?" CssClass="auto-style9"></asp:Label>
+                    </p>
+        <p class="auto-style7" style="font-family: 'Malgun Gothic'; color: #000000; font-weight: bold;">
+                        <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" BackColor="#CC00FF" Font-Bold="True" Font-Names="Malgun Gothic" ForeColor="White" Height="30px" Width="100px" />
+                    </p>
     </form>
 </body>
 </html>

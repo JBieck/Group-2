@@ -102,5 +102,15 @@ namespace Group2
 
             return ret;
         }
+
+        protected void txtUserName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

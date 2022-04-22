@@ -106,5 +106,10 @@ namespace Group2
                 conn.Close();
             }
         }
+
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
