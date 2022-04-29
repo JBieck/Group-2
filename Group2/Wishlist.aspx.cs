@@ -49,6 +49,7 @@ namespace Group2
             }
             finally
             {
+                GridView1.DataBind();
                 conn.Close();
             }
         }
@@ -71,6 +72,7 @@ namespace Group2
             }
             finally
             {
+                GridView1.DataBind();
                 conn.Close();
             }
         }

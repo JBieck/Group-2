@@ -108,6 +108,7 @@
     <Content Include="Collection.aspx" />
     <Content Include="default.aspx" />
     <Content Include="Home.aspx" />
+    <Content Include="Images\personIcon.png" />
     <Content Include="Images\SelenePetIMG.jpg" />
     <Content Include="Login.aspx" />
     <Content Include="Profile.aspx" />

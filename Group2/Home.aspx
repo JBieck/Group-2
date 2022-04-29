@@ -45,8 +45,9 @@
                     <td class="auto-style5"></td>
                     <td class="auto-style4"></td>
                     <td class="auto-style6">
-                        <asp:ImageButton ID="imgProfile" runat="server" Height="75px" OnClick="ImageButton1_Click" Width="75px" />
-                    </td>
+                        <asp:ImageButton ID="imgProfile" runat="server" Height="93px" OnClick="ImageButton1_Click" Width="90px" ImageUrl="~/Images/personIcon.png" />
+                        <br />
+                        Profile</td>
                 </tr>
                 <tr>
                     <td class="auto-style5"></td>
